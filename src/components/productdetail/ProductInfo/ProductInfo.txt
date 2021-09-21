@@ -1,0 +1,10 @@
+de:
+  showMore: Mehr
+  showLess: Weniger
+  available: Verfügbar
+  description: Whatever your needs, we’ve got a f’real product to make your customers smile. Choose fast and simple products for minimal labor and maximum output or craft-made concoctions customized to your menu.
+en:
+  showMore: Show more
+  showLess: Show less
+  available: Available
+  description : Whatever your needs, we’ve got a f’real product to make your customers smile. Choose fast and simple products for minimal labor and maximum output or craft-made concoctions customized to your menu.

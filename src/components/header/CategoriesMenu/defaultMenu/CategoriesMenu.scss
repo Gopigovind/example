@@ -1,0 +1,71 @@
+
+  .mega-menu.menu-2-col.mega-menu-width3 {
+    font-family: Alright Sans,Verdana,sans-serif
+  }
+
+  .main-menu.main-menu-blod > nav > ul > li > a {
+    font-size: 18px !important;
+  }
+  .main-menu > nav > ul > li.position-static > .mega-menu-width3 > li > ul.mega-menu-width4 > li > a.menu-title {
+    display: block;
+    border-bottom: 2px solid;
+    border-color: #d31145;
+    color: #d31145!important;
+    font-size: 16px!important;
+    cursor: default;
+    pointer-events: none;
+    padding: 2px !important;
+  }
+
+  .main-menu > nav > ul > li.position-static > .menu-2-col > li > ul.mega-menu-width4 > li.cat-width,
+  .main-menu > nav > ul > li.position-static > .mega-menu-width3 > li > ul.mega-menu-width4 > li {
+    margin-right: 20px;
+  }
+  .main-menu.main-menu-blod > nav > ul > li.position-static > .mega-menu-width3 > li > ul.mega-menu-width4 > li .all-products,
+  .main-menu.main-menu-blod > nav > ul > li.position-static > .mega-menu-width3 > li > ul.mega-menu-width4 > li .pizza,
+  .main-menu.main-menu-blod > nav > ul > li.position-static > .mega-menu-width3 > li > ul.mega-menu-width4 > li .donut {
+    width: 100%
+  }
+
+  .our-brand-list li {
+
+    background-position: 50%;
+    background-size: contain;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding-left: 10px;
+    width: calc(50% - 5px);  
+    display: flex; 
+    margin-bottom: 10px;
+    padding-left: 20px;
+    height: 100px;
+    width: 137px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .our-brand-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .our-brand-list li:last-child {
+    background-color: #d31145;
+    background: linear-gradient(
+135deg,#f68b1f,#e02125 32%,#8b0027 101%);
+  }
+
+  .our-brand-list li:last-child a {
+    display: block; 
+    color: #fff!important;
+    z-index: 2;
+    opacity: 1!important;
+    font-size: 10px!important;
+    margin: 39px -1px;
+    text-transform: uppercase; 
+    font-weight: 900; 
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }

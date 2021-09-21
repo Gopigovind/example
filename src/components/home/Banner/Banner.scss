@@ -1,0 +1,60 @@
+.slider-area {
+    .subscribe-form {
+        padding: 28px;
+        background-color: #d31145;
+        background: linear-gradient(135deg,#f68b1f,#e02125 32%,#8b0027 101%);
+        font-size: 1.125rem;
+        margin-top: 9em;
+        
+        h2 {
+                font-size: 2.25rem;
+                color: #fff;
+                font-weight: 900;
+                line-height: 1.075;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: .5rem;
+            color: #fff;
+            line-height: 1.5;
+        }
+
+        label {
+            color: #fff;
+            font-size: 12px;
+            font-weight: 900;
+        }
+
+        input[type="text"] {
+            background-color: #fff;
+            color: #000;
+            font-weight: 600;
+        }
+
+        select {
+            background-color: #fff;
+            color: #000;
+            height: 3rem
+        }
+
+        button {
+            margin: 1.5rem 0 ;
+            background-color: #fff;
+            color: #d31145;
+            padding: 10px 30px 10px 10px;
+            min-width: auto;
+            font-weight: 900;
+            font-size: 13.5px;
+            transition: box-shadow .2s ease-in-out;
+            position: relative;
+
+            span {
+                color: inherit;
+                font-weight: 900;
+                position: absolute;
+                right: 10px;
+            }
+        }
+    }
+}
