@@ -7,7 +7,7 @@
     <div class="main-header-wrap bg-gray">
       <div class="custom-container">
         <div class="header-top">
-          <div class="row align-items-center">
+          <div class="row align-items-center" style="margin-right: 10px;margin-left:10px;">
             <div class="col-sm-6">
               <div class="header-info header-info-inc">
                 <router-link
@@ -42,7 +42,7 @@
         <div class="intelligent-header bg-white header-transform">
           <div class="header-middle header-transform">
             <div class="custom-container">
-              <div class="row align-items-center">
+              <div class="row align-items-center" style="margin-right: 15px;margin-left: 15px;">
                 <div class="col-xl-1 col-lg-3">
                   <div class="logo">
                     <router-link to="/">
@@ -57,8 +57,10 @@
                 <div class="col-xl-11 col-lg-9 position-static">
                   <div class="main-menu menu-lh-3 main-menu-blod main-menu-center" style="margin: 0;">
                     <CategoriesMenu />
+                    <div style="margin-left:40px;" class="custom-center">
                     <LoginButton />
-                    <div class="cart-wrap component-same ml-10 custom-center">
+                    </div>
+                    <div class="cart-wrap component-same ml-20 custom-center">
                       <a
                         href
                         @click.prevent="openMiniCart"

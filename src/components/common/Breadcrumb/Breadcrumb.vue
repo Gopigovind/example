@@ -2,11 +2,10 @@
   <div class="breadcrumb-area breadcrumb-bg-1 bg-gray">
     <div class="container-fluid"></div>
     <div class="breadcrumb-content text-left">
-      
       <ul v-if="currentCategory && currentCategory.ancestors" class="mb-20">
         <li>
           <router-link to="/" data-test="breadcrumb-home-link">{{
-            $t('home')
+            $t("home")
           }}</router-link>
         </li>
         <li
@@ -15,7 +14,7 @@
           :key="ancestor.slug"
         >
           <router-link
-            data-test=breadcrumb-ancestor-link
+            data-test="breadcrumb-ancestor-link"
             v-if="ancestor.name"
             :to="{ name: 'products', params: { categorySlug: ancestor.slug } }"
             class="active"
@@ -26,13 +25,18 @@
       <div
         v-if="currentCategory && currentCategory.name"
         class="breadcrumb-title"
+        style="width: 760px"
       >
         <h2>{{ currentCategory.name }}</h2>
       </div>
-      <!-- <div class="copy"><p>The highest quality smoked meats. 
-        The largest authentic BBQ manufacturer in the United States. Born in the heart of barbecue country — Gallatin,
-         Tennessee, our barbeque meats use only the purest smokehouse processes
-          for genuine rib-sticking satisfaction.</p></div> -->
+      <div class="copy">
+        <p style="font-size: 13px">
+          From breakfast to happy hour, we offer a variety of delightful baked
+          goods to complement your consumers’ meals — or drinks. Explore our
+          biscuit dough and fully baked pretzels, and give your customers a
+          nostalgic treat.
+        </p>
+      </div>
     </div>
   </div>
 </template>

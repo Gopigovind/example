@@ -4,9 +4,9 @@
 
 <template>
   <div class="pt-160">
-    <div v-if="cartNotEmpty" class="breadcrumb-area bg-gray">
+    <div v-if="cartNotEmpty" class="custom-breadcrumb-area bg-gray">
       <div class="container-fluid">
-        <div class="breadcrumb-content text-center">
+        <div class="custom-breadcrumb-content text-center">
           <ul>
             <li>
               <router-link to="/">Home</router-link>

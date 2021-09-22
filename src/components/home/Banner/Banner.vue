@@ -51,8 +51,8 @@
           <div class="row height-100-percent align-items-center">
             <div class="col-lg-8 col-md-8 col-sm-12 col-12">
               <div class="slider-content-9 slider-animated-1">
-                <h1 class="animated">{{ $t("WELCOME TO RICH'S USA") }}</h1>
-                <h1 class="animated">{{ $t("INSPIRATION STARTS HERE.") }}</h1>
+                <h2 class="animated h2-override">{{ $t("WELCOME TO RICH'S USA") }}</h2>
+                <h1 class="animated h1-override">{{ $t("INSPIRATION STARTS HERE.") }}</h1>
                 <!-- <div class="slider-btn-1 text-center">
                   <router-link
                     :to="{ name: 'products', params: { categorySlug: 'new' } }"

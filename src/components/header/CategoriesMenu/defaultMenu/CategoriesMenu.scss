@@ -8,8 +8,6 @@
   }
   .main-menu > nav > ul > li.position-static > .mega-menu-width3 > li > ul.mega-menu-width4 > li > a.menu-title {
     display: block;
-    border-bottom: 2px solid;
-    border-color: #d31145;
     color: #d31145!important;
     font-size: 16px!important;
     cursor: default;
@@ -61,11 +59,38 @@
     color: #fff!important;
     z-index: 2;
     opacity: 1!important;
-    font-size: 10px!important;
-    margin: 39px -1px;
+    font-size: 9px!important;
+    margin: 35px 2px;
     text-transform: uppercase; 
     font-weight: 900; 
     display: inline-block;
     padding-top: 5px;
     padding-bottom: 5px;
+  }
+
+  .mega-menu-width4.Products .cat-width:last-child {
+    width: 40% !important;
+  }
+  .mega-menu-width4.Products .cat-width:last-child .our-brand-list li {
+    padding-left: 0;
+    width: 110px;
+  }
+
+  .main-menu > nav > ul > li.position-static > .menu-2-col {
+    left: 7% !important;
+  }
+
+  .mega-menu-width4.Products li.cat-width:first-child a .span {
+    font-size: 11px;
+  }
+  .main-menu > nav > ul > li.cat-width > ul li a span {
+    font-size: 11px !important;
+  }
+
+  .mega-menu-width4.Products li.all-products {
+    width: 27% !important;
+  }
+
+  .main-menu > nav > ul > li.position-static.Products > .mega-menu-width3 {
+    width: 92% !important;
   }

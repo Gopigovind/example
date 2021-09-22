@@ -5,7 +5,7 @@
 <template>
   <div class="shop-area pb-100">
     <LoadingSpinner v-if="isLoading" />
-    <div class="custom-container" v-else-if="categories && products">
+    <div class="container" v-else-if="categories && products">
       <TopBar
         v-on:toggle-filter="toggleFilter"
         @change-sort="changeSort"

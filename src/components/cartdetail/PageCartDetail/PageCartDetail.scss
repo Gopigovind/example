@@ -278,3 +278,42 @@ h3.cart-page-title {
     }
   }
 }
+
+.custom-breadcrumb-area {
+  margin-bottom: 20px;
+  padding-top: 0;
+  padding: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 335px;
+  padding-top: 115px;
+  padding-bottom: 0; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  background-color: #d31145;
+  background: linear-gradient(
+135deg, #f68b1f, #e02125 32%, #8b0027 101%);
+}
+
+.custom-breadcrumb-content .breadcrumb-title h2 {
+  line-height: 1.075;
+  font-size: 4.125rem;
+  font-weight: 900;
+  margin: 0;
+  font-weight: bold;
+  color: #fff;
+}
+
+.custom-breadcrumb-content ul li a {
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 900;
+  line-height: 1.075;
+}

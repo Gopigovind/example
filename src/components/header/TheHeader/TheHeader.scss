@@ -2795,7 +2795,7 @@
 }
 
 .cat-width {
-  width: 66.6% !important;
+  width: 100% !important;
   a {
     padding: 0px !important;
   }
@@ -2812,4 +2812,10 @@
 
 .main-header-wrap .site-header-outer .intelligent-header.header-transform {
   background: transparent !important;
+}
+
+.main-menu > nav > ul > li > ul li a span {
+  position: relative;
+  display: inline-block;
+  border: white;
 }

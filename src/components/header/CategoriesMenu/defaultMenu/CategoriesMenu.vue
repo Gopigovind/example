@@ -8,6 +8,7 @@
         class="position-static"
         v-for="category1stLevel in sortedCategories"
         :key="category1stLevel.id"
+        :class="category1stLevel.name"
         @mouseenter="hoverOnCategory(category1stLevel)"
         @mouseleave="hoverOffCategory()"
         data-test="category-1st-level"
@@ -36,11 +37,11 @@
           "
           :style="
             category1stLevel.name == 'Business Solutions'
-              ? 'width: 20%; left: 35%'
+              ? 'width: 20%; left: 38%'
               : category1stLevel.name == 'Resources'
-              ? 'width: 20%; left: 55%'
+              ? 'width: 30%; left: 53%'
               : category1stLevel.name == 'About Us'
-              ? 'width: 20%; left: 65%'
+              ? 'width: 15%; left: 72%'
               : ''
           "
         >
@@ -48,7 +49,7 @@
             class="triangle"
             :style="
               category1stLevel.name == 'Business Solutions'
-                ? 'left: 50%'
+                ? 'left: 40%'
                 : category1stLevel.name == 'Resources'
                 ? 'left:60%'
                 : category1stLevel.name == 'About Us'
@@ -57,8 +58,8 @@
             "
           ></span>
           <li>
-            <ul class="mega-menu-width4">
-              <li v-if="category1stLevel.name == 'Products'">
+            <ul class="mega-menu-width4" :class="category1stLevel.name">
+              <li class="all-products" v-if="category1stLevel.name == 'Products'">
                 <div class="all-products">ALL PRODUCTS</div>
                 <div class="pizza">
                   PIZZA
@@ -69,7 +70,8 @@
               </li>
               <li
                 class="cat-width"
-                v-for="category2ndLevel in category1stLevel.children.slice().reverse()"
+                v-for="category2ndLevel in category1stLevel.name == 'Products' ?
+                  category1stLevel.children.slice().reverse() : category1stLevel.children"
                 :key="category2ndLevel.id"
                 :style="
                   category1stLevel.name != 'Products'
@@ -90,7 +92,8 @@
                 </router-link>
                  
                 <ul> 
-                <div class="our-brand-list" v-if="category2ndLevel.name == 'Our Brands'">
+                <div class="our-brand-list" 
+                  v-if="category1stLevel.name == 'Products' && category2ndLevel.name == 'Our Brands'">
                 <li>
                   <img
                     src="https://www.richsusa.com/wp-content/uploads/2021/03/Christie-Cookie-Logo-Tagline_1-color.jpg" 
