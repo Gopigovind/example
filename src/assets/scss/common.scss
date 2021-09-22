@@ -1478,16 +1478,16 @@ button, input, optgroup, select, textarea {
 
 .custom-container {
     max-width: 1774px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
     width: 100%;
     @media #{$xx-layout} {
         max-width: 1429px;
     }
     @media #{$xl-layout} {
-        max-width: 1200px;
+        max-width: 100%;
     }
     @media #{$lg-layout} {
         max-width: 960px;
@@ -1503,6 +1503,15 @@ button, input, optgroup, select, textarea {
         max-width: 540px;
     }
 }
+.header-transform .custom-container {
+    
+    background-color: transparent;
+}
+
+.custom-container .header-top {
+    background-color: #F9F9F9;
+}
+
 
 .custom-container-2 {
     max-width: 1694px;
@@ -1741,10 +1750,7 @@ button, input, optgroup, select, textarea {
 }
 .bg-white {
     background-color: #fff;
-}
-.bg-gray {
-    background-color: #F9F9F9;
-}
+} 
 
 .default-overlay {
     position: relative;

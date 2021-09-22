@@ -76,6 +76,17 @@ export default {
         this.$store.dispatch("closeMiniCart");
       }
     },
+    onScroll() {
+      var parentHeader = document.querySelector('.site-header-outer .intelligent-header');
+        var titleHeader = document.querySelector('.site-header-outer .header-middle');
+      if (document.documentElement.scrollTop != 0) {
+        parentHeader.classList.remove('header-transform');
+        titleHeader.classList.remove('header-transform');
+      } else if (!parentHeader.classList.contains('header-transform')) {
+        parentHeader.classList.add('header-transform');
+        titleHeader.classList.add('header-transform');
+      }
+    }
   },
   data() {
     return {
@@ -119,12 +130,15 @@ export default {
       "keyup",
       this.keyUpListener
     );
+    document.addEventListener('scroll', this.onScroll);
+    document.querySelector('.main-wrapper.main-wrapper-2').addEventListener('scroll', this.onScroll);
   },
   beforeDestroy() {
     document.body.removeEventListener(
       "keyup",
       this.keyUpListener
     );
+    document.removeEventListener('scroll', this.onScroll);
   },
   watch: {
     $route() {

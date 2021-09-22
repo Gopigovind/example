@@ -104,16 +104,7 @@
       <button>LEARN MORE</button>
     </div>
     <div
-      class="
-        single-slider
-        bg-img
-        slider-height-2
-        align-items-center
-        custom-d-flex
-      "
-      style="
-        background-image: url(https://www.richsusa.com/wp-content/uploads/2020/08/ISB-LP-Banner.jpg);
-      "
+     
     >
       <div class="container">
         <div class="row height-100-percent align-items-center">

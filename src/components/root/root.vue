@@ -6,6 +6,7 @@
   v-if="computedLocale"
   class="main-wrapper main-wrapper-2 main-wrapper-3"
   :class="miniCartOpen ? 'overlay-active' : ''"
+  
 >
   <div @click="close()" class="body-overlay"></div>
   <MiniCart />

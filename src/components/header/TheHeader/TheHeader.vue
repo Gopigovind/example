@@ -39,8 +39,8 @@
         </div>
       </div>
       <div class="site-header-outer" style="height: 100px;">
-        <div class="intelligent-header bg-white">
-          <div class="header-middle">
+        <div class="intelligent-header bg-white header-transform">
+          <div class="header-middle header-transform">
             <div class="custom-container">
               <div class="row align-items-center">
                 <div class="col-xl-1 col-lg-3">

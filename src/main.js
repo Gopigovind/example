@@ -37,6 +37,8 @@ Vue.directive('vpshow', {
   /* eslint-disable no-param-reassign */
   bind(el, binding) {
     el.$onScroll = function onScroll() {
+      debugger
+      alert('dd');
       binding.value(el);
     };
     document.addEventListener('scroll', el.$onScroll);
